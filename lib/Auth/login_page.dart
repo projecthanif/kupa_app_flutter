@@ -56,6 +56,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     child: TextField(
                       decoration: InputDecoration(
+                        fillColor: Colors.grey,
                         label: Text(
                           "Your email",
                           style: TextStyle(
