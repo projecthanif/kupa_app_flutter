@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:kupa_app/splash/congrat_page.dart';
 
 class EmailVerifyPage extends StatelessWidget {
   const EmailVerifyPage({super.key});
@@ -73,6 +74,53 @@ class EmailVerifyPage extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "if you didn't recieve a code? ",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                  SizedBox(
+                    width: 5.0,
+                  ),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Text(
+                      "Resend",
+                      style: TextStyle(
+                        color: Colors.green[700],
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              SizedBox(
+                width: 400.0,
+                child: FloatingActionButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CongratPage(),
+                      ),
+                    );
+                  },
+                  backgroundColor: Colors.green[700],
+                  child: Text(
+                    "Continue",
+                    style: TextStyle(color: Colors.white, fontSize: 20.0),
+                  ),
+                ),
               ),
             ],
           ),

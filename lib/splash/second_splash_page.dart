@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:kupa_app/Auth/login_page.dart';
+import 'package:kupa_app/splash/congrat_page.dart';
 
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
@@ -60,7 +61,14 @@ class AuthPage extends StatelessWidget {
                   width: 350.0,
                   height: 70.0,
                   child: FloatingActionButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CongratPage(),
+                        ),
+                      );
+                    },
                     backgroundColor: Colors.green[800],
                     child: Text(
                       "Continue",

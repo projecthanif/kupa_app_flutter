@@ -244,10 +244,7 @@ class LoginPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset(
-                          'lib/images/rice-bowl.png',
-                          width: 30.0,
-                        ),
+                        Icon(Icons.circle),
                         SizedBox(
                           width: 10.0,
                         ),
