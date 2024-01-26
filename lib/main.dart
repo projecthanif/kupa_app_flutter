@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 // import 'package:kupa_app/opening/first_page.dart';
-import 'package:kupa_app/opening/second_page.dart';
+import 'package:kupa_app/splash/second_splash_page.dart';
 
 void main() {
   runApp(KupaApp());
