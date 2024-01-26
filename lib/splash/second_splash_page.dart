@@ -18,7 +18,7 @@ class AuthPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
-                  'lib/images/rice-bowl.png',
+                  'images/rice-bowl.png',
                   width: 30.0,
                 ),
                 Text(
@@ -32,7 +32,7 @@ class AuthPage extends StatelessWidget {
             ),
             Center(
               child: Image.asset(
-                'lib/images/pasta.jpg',
+                'images/pasta.jpg',
                 width: 300.0,
               ),
             ),
