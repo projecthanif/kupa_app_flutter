@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:kupa_app/Auth/login_page.dart';
+import 'package:kupa_app/Auth/verify_page.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
@@ -108,7 +109,12 @@ class SignUpPage extends StatelessWidget {
               height: 60,
               width: 400.0,
               child: FloatingActionButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => EmailVerifyPage()),
+                  );
+                },
                 backgroundColor: Colors.green[700],
                 child: Text(
                   "Register",
