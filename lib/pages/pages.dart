@@ -36,6 +36,7 @@ class _MainPageState extends State<MainPage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
+            // icon: Icon(Boxicons.bx_home_alt),
             label: "Home",
           ),
           BottomNavigationBarItem(

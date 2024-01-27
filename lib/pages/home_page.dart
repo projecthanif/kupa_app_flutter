@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -159,8 +159,7 @@ class HomePage extends StatelessWidget {
                         padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                         child: Image.asset(
                           'images/pasta.jpg',
-                          width: 130.0,
-                          height: 130,
+                          height: 110,
                         ),
                       )
                     ],
@@ -175,10 +174,108 @@ class HomePage extends StatelessWidget {
                   fontSize: 25,
                 ),
               ),
-              SizedBox(height: 20),
-              // ListView(
-              //   children: [],
-              // ),
+              SizedBox(height: 10),
+              SizedBox(
+                height: 210,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Image.asset(
+                            'images/pic3.png',
+                            height: 150,
+                          ),
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          "HongHong Food",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          "\$200",
+                          style: TextStyle(
+                            color: Colors.green[700],
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Image.asset(
+                            'images/pic3.png',
+                            height: 150,
+                          ),
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          "HongHong Food",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          "\$200",
+                          style: TextStyle(
+                            color: Colors.green[700],
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Image.asset(
+                            'images/pic3.png',
+                            height: 150,
+                          ),
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          "HongHong Food",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          "\$200",
+                          style: TextStyle(
+                            color: Colors.green[700],
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
