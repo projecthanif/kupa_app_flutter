@@ -14,7 +14,7 @@ class FirstPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'lib/images/bowl.png',
+                'images/bowl.png',
                 width: 90.0,
               ),
               Text(

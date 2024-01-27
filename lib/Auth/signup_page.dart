@@ -115,7 +115,8 @@ class SignUpPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => EmailVerifyPage()),
+                        builder: (context) => EmailVerifyPage(),
+                      ),
                     );
                   },
                   backgroundColor: Colors.green[700],
