@@ -158,7 +158,7 @@ class HomePage extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                         child: Image.asset(
-                          'images/pasta.jpg',
+                          'images/street-food.png',
                           height: 110,
                         ),
                       )
@@ -180,98 +180,105 @@ class HomePage extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(40),
+                    SizedBox(
+                      width: 150,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(40),
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: Image.asset(
+                                'images/pic3.png',
+                                height: 150,
+                              ),
+                            ),
                           ),
-                          child: Image.asset(
-                            'images/pic3.png',
-                            height: 150,
+                          SizedBox(height: 10.0),
+                          Text(
+                            "HongHong Food",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
-                        ),
-                        SizedBox(height: 10.0),
-                        Text(
-                          "HongHong Food",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                          Text(
+                            "\$200",
+                            style: TextStyle(
+                              color: Colors.green[700],
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                        Text(
-                          "\$200",
-                          style: TextStyle(
-                            color: Colors.green[700],
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(40),
+                    SizedBox(width: 10),
+                    SizedBox(
+                      width: 150,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                            child: Image.asset(
+                              'images/pic.png',
+                              height: 150,
+                            ),
                           ),
-                          child: Image.asset(
-                            'images/pic3.png',
-                            height: 150,
+                          SizedBox(height: 10.0),
+                          Text(
+                            "HongHong Food",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
-                        ),
-                        SizedBox(height: 10.0),
-                        Text(
-                          "HongHong Food",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                          Text(
+                            "\$200",
+                            style: TextStyle(
+                              color: Colors.green[700],
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                        Text(
-                          "\$200",
-                          style: TextStyle(
-                            color: Colors.green[700],
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(40),
+                    SizedBox(width: 10),
+                    SizedBox(
+                      width: 150,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                            child: Image.asset(
+                              'images/street-food.png',
+                              height: 150,
+                            ),
                           ),
-                          child: Image.asset(
-                            'images/pic3.png',
-                            height: 150,
+                          SizedBox(height: 10.0),
+                          Text(
+                            "HongHong Food",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
-                        ),
-                        SizedBox(height: 10.0),
-                        Text(
-                          "HongHong Food",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                          Text(
+                            "\$200",
+                            style: TextStyle(
+                              color: Colors.green[700],
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                        Text(
-                          "\$200",
-                          style: TextStyle(
-                            color: Colors.green[700],
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),
