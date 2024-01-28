@@ -25,12 +25,12 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              TextField(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: TextField(
                 decoration: InputDecoration(
                   label: Row(
                     children: [
@@ -47,8 +47,10 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
-              Container(
+            ),
+            Padding(
+              padding: const EdgeInsets.all(12),
+              child: Container(
                 height: 140,
                 width: 400,
                 decoration: BoxDecoration(
@@ -107,8 +109,10 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 30),
-              Container(
+            ),
+            Padding(
+              padding: const EdgeInsets.all(12),
+              child: Container(
                 // height: 140,
                 width: 400,
                 padding: EdgeInsets.all(15),
@@ -166,125 +170,227 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
-              Text(
+            ),
+            Padding(
+              padding: const EdgeInsets.all(12),
+              child: Text(
                 "Top of Week",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 25,
                 ),
               ),
-              SizedBox(height: 10),
-              SizedBox(
-                height: 210,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    SizedBox(
-                      width: 150,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(40),
-                            ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Image.asset(
-                                'images/pic3.png',
-                                height: 150,
-                              ),
-                            ),
+            ),
+            SizedBox(
+              height: 210,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 15),
+                  SizedBox(
+                    width: 150,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(40),
                           ),
-                          SizedBox(height: 10.0),
-                          Text(
-                            "HongHong Food",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                            ),
-                          ),
-                          Text(
-                            "\$200",
-                            style: TextStyle(
-                              color: Colors.green[700],
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 10),
-                    SizedBox(
-                      width: 150,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          ClipRRect(
+                          child: ClipRRect(
                             borderRadius: BorderRadius.circular(20),
                             child: Image.asset(
-                              'images/pic.png',
+                              'images/pic3.png',
                               height: 150,
                             ),
                           ),
-                          SizedBox(height: 10.0),
-                          Text(
-                            "HongHong Food",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                            ),
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          "HongHong Food",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
                           ),
-                          Text(
-                            "\$200",
-                            style: TextStyle(
-                              color: Colors.green[700],
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
+                        ),
+                        Text(
+                          "\$200",
+                          style: TextStyle(
+                            color: Colors.green[700],
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                    SizedBox(width: 10),
-                    SizedBox(
-                      width: 150,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          ClipRRect(
+                  ),
+                  SizedBox(width: 10),
+                  SizedBox(
+                    width: 150,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
+                            'images/pic.png',
+                            height: 150,
+                          ),
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          "HongHong Food",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          "\$200",
+                          style: TextStyle(
+                            color: Colors.green[700],
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  SizedBox(
+                    width: 150,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
+                            'images/street-food.png',
+                            height: 150,
+                          ),
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          "HongHong Food",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          "\$200",
+                          style: TextStyle(
+                            color: Colors.green[700],
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 150,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: ClipRRect(
                             borderRadius: BorderRadius.circular(20),
                             child: Image.asset(
-                              'images/street-food.png',
+                              'images/pic3.png',
                               height: 150,
                             ),
                           ),
-                          SizedBox(height: 10.0),
-                          Text(
-                            "HongHong Food",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                            ),
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          "HongHong Food",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
                           ),
-                          Text(
-                            "\$200",
-                            style: TextStyle(
-                              color: Colors.green[700],
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
+                        ),
+                        Text(
+                          "\$200",
+                          style: TextStyle(
+                            color: Colors.green[700],
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                  SizedBox(width: 10),
+                  SizedBox(
+                    width: 150,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
+                            'images/pic.png',
+                            height: 150,
+                          ),
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          "HongHong Food",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          "\$200",
+                          style: TextStyle(
+                            color: Colors.green[700],
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  SizedBox(
+                    width: 150,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
+                            'images/street-food.png',
+                            height: 150,
+                          ),
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          "HongHong Food",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          "\$200",
+                          style: TextStyle(
+                            color: Colors.green[700],
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
