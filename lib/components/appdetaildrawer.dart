@@ -17,7 +17,6 @@ class AppDetailsDrawer extends StatefulWidget {
 class _AppDetailsDrawerState extends State<AppDetailsDrawer> {
   int _initializeNum = 1;
 
-  @override
   void _increment() {
     setState(() {
       _initializeNum++;
