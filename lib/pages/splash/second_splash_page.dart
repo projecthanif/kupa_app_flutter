@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:kupa_app/components/AppBoldTxt.dart';
+import 'package:kupa_app/components/appboldtxt.dart';
 import 'package:kupa_app/components/button.dart';
 import 'package:kupa_app/pages/auth/auth_login_page.dart';
 
@@ -29,7 +29,7 @@ class AuthPage extends StatelessWidget {
         pageSnapping: true,
         itemCount: images.length,
         itemBuilder: (context, index) {
-          return Container(
+          return SizedBox(
             height: double.maxFinite,
             width: double.maxFinite,
             child: Column(

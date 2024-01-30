@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
-import 'package:kupa_app/components/AppBoldTxt.dart';
+import 'package:kupa_app/components/appboldtxt.dart';
 import 'package:kupa_app/components/button.dart';
 import 'package:kupa_app/pages/splash/congrat_page.dart';
 
