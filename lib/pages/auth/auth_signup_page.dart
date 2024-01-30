@@ -68,9 +68,9 @@ class SignUpPage extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              MyButton(
+              AppButton(
                 txt: "Register",
-                onPressed: () {
+                onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(

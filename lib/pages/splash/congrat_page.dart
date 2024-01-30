@@ -21,9 +21,9 @@ class CongratPage extends StatelessWidget {
             SizedBox(height: 50.0),
             Padding(
               padding: const EdgeInsets.all(10.0),
-              child: MyButton(
+              child: AppButton(
                 txt: 'Get Started',
-                onPressed: () {
+                onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => MainPage()),

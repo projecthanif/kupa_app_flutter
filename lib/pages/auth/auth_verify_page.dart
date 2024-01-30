@@ -78,9 +78,9 @@ class EmailVerifyPage extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              MyButton(
+              AppButton(
                 txt: 'Continue',
-                onPressed: () {
+                onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:kupa_app/components/appboldtxt.dart';
 import 'package:kupa_app/components/button.dart';
 import 'package:kupa_app/pages/auth/auth_login_page.dart';
+import 'package:kupa_app/pages/pages.dart';
 
 class AuthPage extends StatelessWidget {
   AuthPage({super.key});
@@ -91,15 +92,25 @@ class AuthPage extends StatelessWidget {
                   padding: const EdgeInsets.all(20.0),
                   child: Column(
                     children: [
-                      MyButton(txt: buttonTxt[index], onPressed: () {}),
+                      AppButton(
+                        txt: buttonTxt[index],
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MainPage(),
+                            ),
+                          );
+                        },
+                      ),
                       SizedBox(
                         height: 10.0,
                       ),
-                      MyButton(
+                      AppButton(
                         txt: 'Sign in',
                         txtColor: Colors.green[700],
                         color: Color.fromARGB(179, 218, 221, 219),
-                        onPressed: () {
+                        onTap: () {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
