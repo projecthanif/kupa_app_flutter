@@ -98,13 +98,11 @@ class _MenuPageState extends State<MenuPage> with TickerProviderStateMixin {
               child: TabBarView(
                 controller: _tabController,
                 children: [
-                  AppCard(
-                    cardInfo: [...listTabView],
-                  ),
-                  Text("Hi"),
-                  Text("Hi"),
-                  Text("Hi"),
-                  Text("Hi"),
+                  AppCard(cardInfo: [...listTabView]),
+                  AppCard(cardInfo: [...listTabView]),
+                  AppCard(cardInfo: [...listTabView]),
+                  AppCard(cardInfo: [...listTabView]),
+                  AppCard(cardInfo: [...listTabView]),
                 ],
               ),
             )

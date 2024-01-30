@@ -10,12 +10,22 @@ final List listTabView = [
     'price': '200',
   },
   {
-    'imageLink': 'pic2.png',
+    'imageLink': 'pasta.jpg',
     'foodName': 'Food Name is coming soon',
     'price': '200',
   },
   {
-    'imageLink': 'pic3.png',
+    'imageLink': 'street-food.png',
+    'foodName': 'Food Name is coming soon',
+    'price': '200',
+  },
+  {
+    'imageLink': 'pic.png',
+    'foodName': 'Food Name is coming soon',
+    'price': '200',
+  },
+  {
+    'imageLink': 'street-food.png',
     'foodName': 'Food Name is coming soon',
     'price': '200',
   },
