@@ -2,7 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
-import 'package:kupa_app/splash/congrat_page.dart';
+import 'package:kupa_app/components/AppBoldTxt.dart';
+import 'package:kupa_app/components/button.dart';
+import 'package:kupa_app/pages/splash/congrat_page.dart';
 
 class EmailVerifyPage extends StatelessWidget {
   const EmailVerifyPage({super.key});
@@ -16,10 +18,7 @@ class EmailVerifyPage extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
-              Text(
-                "Verification Email",
-                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 25),
-              ),
+              AppBoldTxt(txt: "Verification Email", txtSize: 33),
               SizedBox(height: 5),
               Text("Please enter the code that just went to your email"),
               Text(
@@ -79,23 +78,16 @@ class EmailVerifyPage extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              SizedBox(
-                width: 400.0,
-                child: FloatingActionButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => CongratPage(),
-                      ),
-                    );
-                  },
-                  backgroundColor: Colors.green[700],
-                  child: Text(
-                    "Continue",
-                    style: TextStyle(color: Colors.white, fontSize: 20.0),
-                  ),
-                ),
+              MyButton(
+                txt: 'Continue',
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => CongratPage(),
+                    ),
+                  );
+                },
               ),
             ],
           ),

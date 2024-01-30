@@ -1,8 +1,11 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:kupa_app/Auth/forget_page.dart';
-import 'package:kupa_app/Auth/signup_page.dart';
+import 'package:kupa_app/components/AppBoldTxt.dart';
+import 'package:kupa_app/components/button.dart';
+import 'package:kupa_app/components/text_field.dart';
+import 'package:kupa_app/pages/auth/auth_forget_page.dart';
+import 'package:kupa_app/pages/auth/auth_signup_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -19,13 +22,7 @@ class LoginPage extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Text(
-                      "Welcome Back",
-                      style: TextStyle(
-                        fontSize: 30.0,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
+                    AppBoldTxt(txt: "Welcome Back"),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 15.0),
                       child: Icon(
@@ -51,26 +48,7 @@ class LoginPage extends StatelessWidget {
                           fontWeight: FontWeight.w800,
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsets.symmetric(
-                          // horizontal: 10,
-                          vertical: 5.0,
-                        ),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            fillColor: Colors.grey,
-                            label: Text(
-                              "Your email",
-                              style: TextStyle(
-                                color: Colors.grey,
-                              ),
-                            ),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                        ),
-                      ),
+                      CustomTextField(txt: "Your email"),
                     ],
                   ),
                 ),
@@ -87,25 +65,7 @@ class LoginPage extends StatelessWidget {
                           fontWeight: FontWeight.w800,
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsets.symmetric(
-                          vertical: 10.0,
-                        ),
-                        child: TextField(
-                          obscureText: true,
-                          decoration: InputDecoration(
-                            label: Text(
-                              "Your password",
-                              style: TextStyle(
-                                color: Colors.grey,
-                              ),
-                            ),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                        ),
-                      ),
+                      CustomTextField(txt: "Your password"),
                     ],
                   ),
                 ),
@@ -127,27 +87,7 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  width: 450.0,
-                  height: 80.0,
-                  // padding: const EdgeInsets.all(10.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(0),
-                    ),
-                  ),
-                  child: FloatingActionButton(
-                    onPressed: () {},
-                    backgroundColor: Colors.green[800],
-                    child: Text(
-                      "Login",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25.0,
-                      ),
-                    ),
-                  ),
-                ),
+                MyButton(txt: "Login", onPressed: () {}),
                 SizedBox(
                   height: 70.0,
                   width: 400.0,

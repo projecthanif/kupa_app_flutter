@@ -35,8 +35,8 @@ class _MainPageState extends State<MainPage> {
         onTap: _navigateBottomBar,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_filled),
-            // icon: Icon(Boxicons.bx_home_alt),
+            // icon: Icon(CupertinoIcons.home),
+            icon: Icon(Boxicons.bx_home_alt),
             label: "Home",
           ),
           BottomNavigationBarItem(

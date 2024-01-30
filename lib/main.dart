@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:kupa_app/splash/loading_page.dart';
-import 'package:kupa_app/splash/second_splash_page.dart';
+import 'package:kupa_app/pages/splash/loading_page.dart';
+import 'package:kupa_app/pages/splash/second_splash_page.dart';
 
 void main() {
   runApp(KupaApp());
@@ -23,22 +23,21 @@ class KupaApp extends StatelessWidget {
           selectedItemColor: Colors.green[700],
         ),
       ),
-      // home: LoadingPageWrapper(),
+      // home: AuthPage(),
       home: LoadingPageWrapper(),
     );
   }
 }
 
 class LoadingPageWrapper extends StatefulWidget {
-  LoadingPageWrapper({super.key});
+  const LoadingPageWrapper({super.key});
 
   @override
-  State<StatefulWidget> createState() => _LoadingPageWrapper();
+  State<LoadingPageWrapper> createState() => _LoadingPageWrapper();
 }
 
 class _LoadingPageWrapper extends State<LoadingPageWrapper> {
   bool _isInitialized = false;
-
   @override
   void initState() {
     super.initState();
@@ -46,19 +45,15 @@ class _LoadingPageWrapper extends State<LoadingPageWrapper> {
   }
 
   Future<void> _initializeApp() async {
-    // Simulate some asynchronous initialization process
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(seconds: 3));
 
-    // Set the flag to true once initialization is complete
     setState(() {
       _isInitialized = true;
     });
-
-    // Navigate to AuthPage after initialization
-    navigateToAuthPage();
+    _redirectNavigation();
   }
 
-  void navigateToAuthPage() {
+  void _redirectNavigation() {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => AuthPage()),
