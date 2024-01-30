@@ -93,7 +93,6 @@ class _MenuPageState extends State<MenuPage> with TickerProviderStateMixin {
               ),
             ),
             Container(
-              // padding: EdgeInsets.all(10),
               width: double.maxFinite,
               height: 500,
               child: TabBarView(

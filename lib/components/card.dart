@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppCard extends StatelessWidget {
-  AppCard({required this.cardInfo});
+  const AppCard({super.key, required this.cardInfo});
 
   final List<Map> cardInfo;
   // final int length;
