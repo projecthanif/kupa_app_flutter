@@ -75,7 +75,7 @@ class _MenuPageState extends State<MenuPage> with TickerProviderStateMixin {
             SizedBox(height: 20),
             Container(
               child: Align(
-                alignment: Alignment.centerLeft,
+              symbols  alignment: Alignment.centerLeft,
                 child: TabBar(
                   controller: _tabController,
                   isScrollable: true,

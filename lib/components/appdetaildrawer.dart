@@ -49,7 +49,7 @@ class _AppDetailsDrawerState extends State<AppDetailsDrawer> {
               txtSize: 25,
             ),
             Container(
-              width: 200,
+              width: 250,
               // color: Colors.red,
               child: Row(
                 // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -96,7 +96,7 @@ class _AppDetailsDrawerState extends State<AppDetailsDrawer> {
                   Container(
                     margin: const EdgeInsets.only(left: 20),
                     child: Text(
-                      "\$${(widget.cardInfo[widget.index]["price"])}",
+                      "\$${(widget.cardInfo[widget.index]["price"]) * _initializeNum}",
                       style: TextStyle(
                         color: Colors.green[700],
                         fontSize: 20,
