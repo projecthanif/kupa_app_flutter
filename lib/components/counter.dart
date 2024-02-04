@@ -1,25 +1,30 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
+import 'package:kupa_app/components/appboldtxt.dart';
 
 class AppCounter extends StatefulWidget {
-  const AppCounter({super.key});
+  AppCounter({super.key, required this.price});
+
+  int price;
 
   @override
   State<AppCounter> createState() => _AppCounterState();
 }
 
 class _AppCounterState extends State<AppCounter> {
-  int _initializeNum = 1;
+  int initializeNum = 1;
 
   void _increment() {
     setState(() {
-      _initializeNum++;
+      initializeNum++;
     });
   }
 
   void _decrement() {
     setState(() {
-      if (_initializeNum != 1) {
-        _initializeNum--;
+      if (initializeNum != 1) {
+        initializeNum--;
       }
     });
   }
@@ -27,7 +32,7 @@ class _AppCounterState extends State<AppCounter> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         GestureDetector(
           onTap: _decrement,
@@ -44,11 +49,10 @@ class _AppCounterState extends State<AppCounter> {
             ),
           ),
         ),
-        const SizedBox(height: 70),
         Container(
           margin: const EdgeInsets.only(left: 20),
           child: Text(
-            "$_initializeNum",
+            "$initializeNum",
             style: const TextStyle(fontSize: 25),
           ),
         ),
@@ -67,6 +71,12 @@ class _AppCounterState extends State<AppCounter> {
               color: Colors.white,
             ),
           ),
+        ),
+        const SizedBox(width: 10),
+        AppBoldTxt(
+          txt: "\$${widget.price * initializeNum}",
+          txtSize: 20,
+          color: Colors.green[700],
         ),
       ],
     );

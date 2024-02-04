@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:kupa_app/components/appboldtxt.dart';
 import 'package:kupa_app/components/button.dart';
-import 'package:kupa_app/pages/pages.dart';
+import 'package:kupa_app/pages/navpages/pages.dart';
 
 class CongratPage extends StatelessWidget {
   const CongratPage({super.key});

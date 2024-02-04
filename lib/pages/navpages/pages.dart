@@ -2,10 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_boxicons/flutter_boxicons.dart';
-import 'package:kupa_app/pages/cart_page.dart';
-import 'package:kupa_app/pages/home_page.dart';
-import 'package:kupa_app/pages/menu_page.dart';
-import 'package:kupa_app/pages/profile_page.dart';
+import 'package:kupa_app/pages/navpages/cart_page.dart';
+import 'package:kupa_app/pages/navpages/home_page.dart';
+import 'package:kupa_app/pages/navpages/menu_page.dart';
+import 'package:kupa_app/pages/navpages/profile_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});

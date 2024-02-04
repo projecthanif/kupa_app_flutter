@@ -77,11 +77,8 @@ class CartPage extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
                                       children: [
-                                        const AppCounter(),
-                                        AppBoldTxt(
-                                          txt: "\$${cartView[index]['price']}",
-                                          txtSize: 20,
-                                          color: Colors.green[700],
+                                        AppCounter(
+                                          price: cartView[index]['price'],
                                         ),
                                       ],
                                     ),
