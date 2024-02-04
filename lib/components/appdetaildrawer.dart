@@ -134,6 +134,8 @@ class _AppDetailsDrawerState extends State<AppDetailsDrawer> {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: ListView.builder(
+                shrinkWrap: true, // Add this line
+                physics: const NeverScrollableScrollPhysics(), // Add this line
                 itemCount: sauces.length,
                 itemBuilder: (BuildContext context, index) {
                   return Column(

@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class AppBoldTxt extends StatelessWidget {
-  AppBoldTxt(
+  const AppBoldTxt(
       {super.key,
       required this.txt,
       this.isAlign,
